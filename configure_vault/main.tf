@@ -1,7 +1,7 @@
 resource "hcp_hvn" "oidc" {
   hvn_id         = var.vault_cluster_id
   cloud_provider = "aws"
-  region         = "us-west-2"
+  region         = var.region
   cidr_block     = "172.25.16.0/20"
 }
 

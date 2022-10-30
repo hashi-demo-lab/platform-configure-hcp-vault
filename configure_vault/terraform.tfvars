@@ -1,1 +1,1 @@
-vault_cluster_id = "oidc-demo"
+vault_cluster_id = "platform-oidc-demo"
