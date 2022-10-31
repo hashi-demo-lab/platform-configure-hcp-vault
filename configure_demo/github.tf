@@ -12,7 +12,7 @@ resource "github_actions_secret" "secrets" {
     "VAULT_ADDR"        = var.vault_server_url
     "VAULT_NAMESPACE"   = "admin"
     "VAULT_SECRET_PATH" = vault_kv_secret_v2.app.path
-    "VAULT_SECRET_KEY"  = "test1"
+    "VAULT_SECRET_KEY"  = "some_secret1"
     "VAULT_ROLE"        = vault_jwt_auth_backend_role.example.role_name
   }
   secret_name     = each.key
