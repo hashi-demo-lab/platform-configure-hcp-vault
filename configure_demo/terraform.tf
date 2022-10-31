@@ -12,10 +12,10 @@ terraform {
   }
 
   cloud {
-    organization = "ned-in-the-cloud"
+    organization = "demo-lab-hashicorp"
 
     workspaces {
-      name = "oidc-github-demo"
+      name = "test-oidc-github-demo"
     }
   }
 }
