@@ -16,3 +16,8 @@ variable "github_repository" {
   default     = "platform-configure-hcp-vault"
 }
 
+variable "kv_secrets_path" {
+  type    = string
+  default = "app/demo_app"
+}
+
