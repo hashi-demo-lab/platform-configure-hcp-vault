@@ -27,9 +27,10 @@ vault read auth/jwt/config
 vault list auth/jwt/role
 vault read auth/jwt/role/github-actions-role
 
-vault policy read github-actions-oidc
+vault policy read  
 
 vault secrets list
 vault kv list tacos/
 vault kv get tacos/sauce_recipe
 ```
+.
