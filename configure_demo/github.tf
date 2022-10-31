@@ -1,4 +1,9 @@
 # Create the necessary GitHub secrets
+provider "github" {
+  owner = var.github_organization
+}
+
+
 data "github_repository" "repo" {
   full_name = "${var.github_organization}/${var.github_repository}"
 }
