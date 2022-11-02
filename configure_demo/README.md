@@ -21,8 +21,7 @@ $env:VAULT_TOKEN=""
 $env:VAULT_ADDR=""
 $env:VAULT_NAMESPACE=""
 
-vault status
-vault auth list
+vault stat
 vault read auth/jwt/config
 vault list auth/jwt/role
 vault read auth/jwt/role/github-actions-role
@@ -30,7 +29,7 @@ vault read auth/jwt/role/github-actions-role
 vault policy read  
 
 vault secrets list
-vault kv list tacos/
-vault kv get tacos/sauce_recipe
+vault kv list app/demo_app/
+vault kv get app/demo_app/pipeline_secret
 ```
 .
