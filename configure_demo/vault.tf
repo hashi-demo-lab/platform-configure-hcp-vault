@@ -15,7 +15,7 @@ resource "vault_mount" "app" {
 resource "vault_kv_secret_v2" "app" {
   mount = vault_mount.app.path
   name  = var.VAULT_SECRET_KEY
-  data_json = var.data_json
+  data_json = "{}"
 }
 
 # Create a policy granting the GitHub repo access to the KV engine

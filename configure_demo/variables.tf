@@ -27,8 +27,3 @@ variable "VAULT_SECRET_KEY" {
   default = "pipeline_secrets"
 }
 
-
-variable "data_json" {
-  type = map(string)
-  sensitive = true
-}
