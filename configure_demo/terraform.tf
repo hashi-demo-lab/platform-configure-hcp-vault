@@ -15,7 +15,7 @@ terraform {
     organization = "demo-lab-hashicorp"
 
     workspaces {
-      name = "test-oidc-github-demo"
+      name = "platform-oidc-github-demo"
     }
   }
 }

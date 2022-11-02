@@ -13,7 +13,7 @@ variable "github_organization" {
 variable "github_repository" {
   type        = string
   description = "(Required) The GitHub repository for the JWT authentication role."
-  default     = "platform-configure-hcp-vault"
+  default     = "demo-static-content"
 }
 
 variable "kv_secrets_path" {
