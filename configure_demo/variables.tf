@@ -21,3 +21,8 @@ variable "kv_secrets_path" {
   default = "app/demo_app"
 }
 
+
+variable "VAULT_SECRET_KEY" {
+  type = string
+  default = "cypress_key"
+}
