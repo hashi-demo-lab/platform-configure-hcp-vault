@@ -24,5 +24,11 @@ variable "kv_secrets_path" {
 
 variable "VAULT_SECRET_KEY" {
   type = string
-  default = "cypress_key"
+  default = "pipeline_secrets"
+}
+
+
+variable "data_json" {
+  type = map(string)
+  sensitive = true
 }
